@@ -15,11 +15,6 @@ class BowlingGameKataTests: XCTestCase {
         let _ = BowlingGame()
     }
     
-    func testPlayerCanBowlOne() {
-        let game = BowlingGame()
-        game.bowl(knockedPins: 0)
-    }
-    
     func testPlayerCanBowlZeroPoint() {
         let game = BowlingGame()
         let score = game.bowl(knockedPins: 0)
