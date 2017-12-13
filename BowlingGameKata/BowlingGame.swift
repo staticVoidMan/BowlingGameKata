@@ -10,8 +10,10 @@ import UIKit
 
 class BowlingGame: NSObject {
 
+    var score: Int = 0
+    
     func bowl(knockedPins: Int) -> Int {
-        var score = knockedPins
+        score += knockedPins
         
         return score
     }
