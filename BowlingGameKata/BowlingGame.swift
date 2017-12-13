@@ -10,8 +10,8 @@ import UIKit
 
 class BowlingGame: NSObject {
 
-    func bowl() {
-        
+    func bowl() -> Int? {
+        return 0
     }
     
 }

@@ -20,4 +20,10 @@ class BowlingGameKataTests: XCTestCase {
         game.bowl()
     }
     
+    func testPlayerCanBowlZeroPoint() {
+        let game = BowlingGame()
+        let score = game.bowl()
+        XCTAssertEqual(score, 0)
+    }
+    
 }
