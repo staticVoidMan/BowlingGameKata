@@ -11,14 +11,16 @@ import UIKit
 class BowlingGame: NSObject {
 
     func bowl(knockedPins: Int) -> Int? {
+        var score: Int?
+        
         if knockedPins == 0 {
-            return 0
+            score = 0
         }
         else if knockedPins == 1 {
-            return 1
+            score = 1
         }
         
-        return nil
+        return score
     }
     
 }
