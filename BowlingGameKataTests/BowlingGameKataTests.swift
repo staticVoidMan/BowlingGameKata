@@ -14,19 +14,9 @@ class BowlingGameKataTests: XCTestCase {
         return BowlingGame()
     }()
     
-    func testCanBowlZeroPoint() {
-        let score = game.bowl(knockedPins: 0)
-        XCTAssertEqual(score, 0)
-    }
-    
     func testCanBowlOnlyOnePoint() {
         let score = game.bowl(knockedPins: 1)
         XCTAssertEqual(score, 1)
-    }
-    
-    func testCanBowlOnlyTwoPoints() {
-        let score = game.bowl(knockedPins: 2)
-        XCTAssertEqual(score, 2)
     }
     
     func testCanBowlOneFrame() {
