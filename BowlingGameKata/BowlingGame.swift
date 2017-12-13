@@ -10,8 +10,15 @@ import UIKit
 
 class BowlingGame: NSObject {
 
-    func bowl() -> Int? {
-        return 0
+    func bowl(knockedPins: Int) -> Int? {
+        if knockedPins == 0 {
+            return 0
+        }
+        else if knockedPins == 1 {
+            return 1
+        }
+        
+        return nil
     }
     
 }
