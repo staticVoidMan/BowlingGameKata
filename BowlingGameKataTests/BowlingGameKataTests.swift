@@ -10,25 +10,21 @@ import XCTest
 @testable import BowlingGameKata
 
 class BowlingGameKataTests: XCTestCase {
+    lazy var game: BowlingGame = {
+        return BowlingGame()
+    }()
     
-    func testCanCreateGame() {
-        let _ = BowlingGame()
-    }
-    
-    func testPlayerCanBowlZeroPoint() {
-        let game = BowlingGame()
+    func testCanBowlZeroPoint() {
         let score = game.bowl(knockedPins: 0)
         XCTAssertEqual(score, 0)
     }
     
-    func testPlayerCanBowlOnlyOnePoint() {
-        let game = BowlingGame()
+    func testCanBowlOnlyOnePoint() {
         let score = game.bowl(knockedPins: 1)
         XCTAssertEqual(score, 1)
     }
     
-    func testPlayerCanBowlOnlyTwoPoints() {
-        let game = BowlingGame()
+    func testCanBowlOnlyTwoPoints() {
         let score = game.bowl(knockedPins: 2)
         XCTAssertEqual(score, 2)
     }
