@@ -15,4 +15,8 @@ class BowlingGameKataTests: XCTestCase {
         
     }
     
+    func testCanCreateGame() {
+        let _ = BowlingGame()
+    }
+    
 }
