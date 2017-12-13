@@ -10,4 +10,8 @@ import UIKit
 
 class BowlingGame: NSObject {
 
+    func bowl() {
+        
+    }
+    
 }
