@@ -11,6 +11,8 @@ import XCTest
 
 class BowlingGameKataTests: XCTestCase {
     
-    
+    func testHasEnvironment() {
+        
+    }
     
 }
