@@ -27,4 +27,10 @@ class BowlingGameKataTests: XCTestCase {
         XCTAssertEqual(score, 1)
     }
     
+    func testPlayerCanBowlOnlyTwoPoints() {
+        let game = BowlingGame()
+        let score = game.bowl(knockedPins: 2)
+        XCTAssertEqual(score, 2)
+    }
+    
 }
